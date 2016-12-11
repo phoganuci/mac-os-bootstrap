@@ -1,0 +1,41 @@
+# OH-MY-ZSH
+export ZSH=~/.oh-my-zsh
+export LANG=en_US.UTF-8
+export EDITOR='vim'
+
+ZSH_THEME="ys"
+
+plugins=(git node npm brew osx extract z)
+
+source $ZSH/oh-my-zsh.sh
+
+# SAFETY ALIASES
+alias rm="rm -iv"
+alias mv="mv -iv"
+alias cp="cp -iv"
+alias ln="ln -iv"
+
+# BANDEDO
+export BD_DEVELOPER_DIR="${HOME}/Developer"
+
+# OTHER ALIASES
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias ohmyzsh="subl ~/.oh-my-zsh"
+alias zshconfig="subl ~/.zshrc"
+alias vimconfig="vim ~/.vimrc"
+alias stree='open -a SourceTree'
+alias ds='cd ${BD_DEVELOPER_DIR}/src'
+
+# RBENV
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# NVM
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
+
+# USER CONFIGURATION
+export PATH=/usr/local/sbin:~:$PATH::$ANDROID_HOME/tools:~/.rvm/bin:~/bin:$PATH
+
+# ANDROID
+export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID_NDK=`brew --prefix android-ndk`
+export PATH=$ANDROID_HOME/platform-tool:$PATH
