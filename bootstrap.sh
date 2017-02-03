@@ -34,8 +34,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 [ -d "/usr/local/share" ] && sudo chown -R $(whoami) /usr/local/share
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install android java vim nvm pyenv rbenv tree
+source $(brew --prefix nvm)/nvm.sh
 nvm install 4
-pyenv install 2.7
+CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" pyenv install -v 2.7
 pyenv global 2.7
 rbenv install 2.3.0
 rbenv global 2.3.0
@@ -107,7 +108,7 @@ cp ${BD_DEVELOPER_DIR}/src/mac-os-bootstrap/system/git/gitconfig ~/.gitconfig
 cp ${BD_DEVELOPER_DIR}/system/vim/vimrc ~/.vimrc
 
 rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-cp ${BD_DEVELOPER_DIR}/src/mac-os-bootstrap/system/Application\ Support/Sublime\ Text\ 3/Packages/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+cp -r ${BD_DEVELOPER_DIR}/src/mac-os-bootstrap/system/Application\ Support/Sublime\ Text\ 3/Packages/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
 
 cd ${HOME}/Library/Preferences
 BD_INTELLIJ_DIR=($(find . -type d -name "IntelliJ*"))

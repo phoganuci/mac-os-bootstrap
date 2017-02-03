@@ -12,8 +12,8 @@
 	[
 		"Vintage"
 	],
-	"skin": "ayu/ayu mirage",
+	"skin": "ayu/ayu-dark",
 	"tab_size": 2,
-	"theme": "ayu-mirage.sublime-theme",
+	"theme": "ayu-dark.sublime-theme",
 	"translate_tabs_to_spaces": true
 }
