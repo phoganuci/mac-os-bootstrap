@@ -104,6 +104,7 @@ cd ~/.vim/bundle && \
 cp ${BD_DEVELOPER_DIR}/src/mac-os-bootstrap/system/zsh/zshrc ~/.zshrc
 
 cp ${BD_DEVELOPER_DIR}/src/mac-os-bootstrap/system/git/gitconfig ~/.gitconfig
+cp ${BD_DEVELOPER_DIR}/src/mac-os-bootstrap/system/git/gitignore ~/.gitignore
 
 cp ${BD_DEVELOPER_DIR}/system/vim/vimrc ~/.vimrc
 
