@@ -33,7 +33,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 [ -d "/usr/local/lib" ] && sudo chown -R $(whoami) /usr/local/lib
 [ -d "/usr/local/share" ] && sudo chown -R $(whoami) /usr/local/share
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install android java vim nvm pyenv rbenv tree
+brew install android vim nvm pyenv rbenv tree unison
 source $(brew --prefix nvm)/nvm.sh
 nvm install 4
 CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" pyenv install -v 2.7
