@@ -57,14 +57,6 @@ brew cask cleanup
 arc set-config editor "/usr/local/bin/vim"
 
 ###############################################################################
-# iTerm2                                                                      #
-###############################################################################
-
-echo "Installing iTerm2 color schemes - In iTerm2 press cmd + i and import Lavanda theme."
-cd ${BD_DEVELOPER_DIR}/src
-git clone git@github.com:mbadolato/iTerm2-Color-Schemes.git
-
-###############################################################################
 # Sublime                                                                     #
 ###############################################################################
 
@@ -110,6 +102,7 @@ cp ${BD_DEVELOPER_DIR}/system/vim/vimrc ~/.vimrc
 
 rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 cp -r ${BD_DEVELOPER_DIR}/src/mac-os-bootstrap/system/Application\ Support/Sublime\ Text\ 3/Packages/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+cp -r ${BD_DEVELOPER_DIR}/src/mac-os-bootstrap/system/Application\ Support/Sublime\ Text\ 3/Packages/Colorsublime-Themes ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
 
 cd ${HOME}/Library/Preferences
 BD_INTELLIJ_DIR=($(find . -type d -name "IntelliJ*"))

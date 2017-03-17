@@ -1,18 +1,28 @@
 {
 	"binary_file_patterns":
 	[
-		"dist*/**/*",
-		"coverage/**/*",
-		"node_modules/**/*"
+		"*/dist-client",
+		"*/coverage",
+		"*/node_modules",
+		"*/dist-test",
+		"*/dist-server",
+		"*/.git"
 	],
-	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
+	"color_scheme": "Packages/Colorsublime-Themes/Bandedo.tmTheme",
+	"folder_exclude_patterns":
+	[
+		"dist",
+		"coverage",
+		"node_modules",
+		"*/.git"
+	],
 	"font_face": "MonacoB2 Bold",
 	"font_size": 13,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-	"skin": "ayu/ayu-dark",
+	"skin": "ayu/ayu dark",
 	"tab_size": 2,
 	"theme": "ayu-dark.sublime-theme",
 	"translate_tabs_to_spaces": true

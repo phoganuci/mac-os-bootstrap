@@ -10,8 +10,13 @@
 		"Babel",
 		"JsFormat",
 		"MarkdownEditing",
+		"Oceanic Color Scheme",
+		"Oceanic Next Color Scheme",
+		"Oceanic Next Italic Color Scheme",
 		"Origami",
 		"Package Control",
+		"RemoteEdit",
+		"rsub",
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint"
 	]
