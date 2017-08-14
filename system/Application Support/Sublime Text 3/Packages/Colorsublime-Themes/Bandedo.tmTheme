@@ -24,9 +24,9 @@
 		<string>#a7adba</string>
 	</dict>
 	<key>name</key>
-	<string>Oceanic Next</string>
+	<string>Bandedo</string>
 	<key>semanticClass</key>
-	<string>theme.dark.oceanic_next</string>
+	<string>theme.dark.bandedo</string>
 	<key>settings</key>
 	<array>
 		<dict>
@@ -82,7 +82,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#C594C5</string>
+				<string>#FF7733</string>
 			</dict>
 		</dict>
 		<dict>
@@ -93,7 +93,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#5FB3B3</string>
+				<string>#EBA77F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -115,7 +115,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#8FC7FF</string>
+				<string>#FFB454</string>
 			</dict>
 		</dict>
 		<dict>
@@ -137,7 +137,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A8D947</string>
+				<string>#FFEE99</string>
 			</dict>
 		</dict>
 		<dict>
@@ -150,7 +150,7 @@
 				<key>fontStyle</key>
 				<string>normal</string>
 				<key>foreground</key>
-				<string>#99C794</string>
+				<string>#CBE84B</string>
 			</dict>
 		</dict>
 		<dict>
@@ -161,7 +161,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FFE57F</string>
+				<string>#F0ADF0</string>
 			</dict>
 		</dict>
 		<dict>
@@ -172,7 +172,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#EC5F67</string>
+				<string>#50B4E6</string>
 			</dict>
 		</dict>
 		<dict>
@@ -185,7 +185,7 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#EC5F67</string>
+				<string>#F0ADF0</string>
 			</dict>
 		</dict>
 		<dict>
@@ -398,7 +398,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#EC5f67</string>
+				<string>#EC5F67</string>
 			</dict>
 		</dict>
 		<dict>
@@ -432,6 +432,39 @@
 			<dict>
 				<key>foreground</key>
 				<string>#C594C5</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>SublimeLinter Error</string>
+			<key>scope</key>
+			<string>sublimelinter.mark.error</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#D02000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>SublimeLinter Warning</string>
+			<key>scope</key>
+			<string>sublimelinter.mark.warning</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#DDB700</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>SublimeLinter Gutter Mark</string>
+			<key>scope</key>
+			<string>sublimelinter.gutter-mark</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 	</array>
