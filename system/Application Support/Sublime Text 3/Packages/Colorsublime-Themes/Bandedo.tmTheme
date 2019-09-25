@@ -6,8 +6,6 @@
 <!-- code: https://github.com/aziz/tmTheme-Editor -->
 <plist version="1.0">
 <dict>
-	<key>author</key>
-	<string>Dmitri Voronianski (http:&#x2f;&#x2f;pixelhunter.me)</string>
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
 	<key>gutterSettings</key>
@@ -24,32 +22,24 @@
 		<string>#a7adba</string>
 	</dict>
 	<key>name</key>
-	<string>Bandedo</string>
-	<key>semanticClass</key>
-	<string>theme.dark.bandedo</string>
+	<string>Material Oceanic Next</string>
 	<key>settings</key>
 	<array>
 		<dict>
 			<key>settings</key>
 			<dict>
-				<key>activeGuide</key>
-				<string>#FBC95A</string>
 				<key>background</key>
-				<string>#0B1114</string>
+				<string>#060610</string>
 				<key>caret</key>
 				<string>#c0c5ce</string>
 				<key>foreground</key>
 				<string>#CDD3DE</string>
-				<key>guide</key>
-				<string>#65737F</string>
 				<key>invisibles</key>
 				<string>#65737e</string>
 				<key>lineHighlight</key>
 				<string>#65737e55</string>
 				<key>selection</key>
 				<string>#4f5b66</string>
-				<key>stackGuide</key>
-				<string>#4F5B66</string>
 			</dict>
 		</dict>
 		<dict>
@@ -71,29 +61,29 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#F2F2F2</string>
+				<string>#CDD3DE</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>Keyword, Storage</string>
 			<key>scope</key>
-			<string>keyword, storage.type, storage.modifier</string>
+			<string>keyword, storage.type</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FF5E00</string>
+				<string>#C792EA</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>Operator, Misc</string>
 			<key>scope</key>
-			<string>keyword.operator, constant.other.color, punctuation, meta.tag, punctuation.definition.tag, punctuation.separator.inheritance.php, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded, keyword.other.template, keyword.other.substitution</string>
+			<string>keyword.operator, constant.other.color, punctuation, meta.tag, punctuation.definition.tag, punctuation.separator.inheritance.php, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#EBA77F</string>
+				<string>#5FB3B3</string>
 			</dict>
 		</dict>
 		<dict>
@@ -111,11 +101,11 @@
 			<key>name</key>
 			<string>Function, Special Method, Block Level</string>
 			<key>scope</key>
-			<string>entity.name.function, meta.function-call, variable.function, support.function, keyword.other.special-method, meta.block-level</string>
+			<string>entity.name.function, meta.function-call, support.function, keyword.other.special-method, meta.block-level</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FF9D14</string>
+				<string>#82AAFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -133,11 +123,11 @@
 			<key>name</key>
 			<string>Number, Constant, Function Argument, Tag Attribute, Embedded</string>
 			<key>scope</key>
-			<string>constant.numeric, constant.language, support.constant, constant.character, variable.parameter, keyword.other.unit</string>
+			<string>constant.numeric, constant.language, support.constant, constant.character, variable.parameter, punctuation.section.embedded, keyword.other.unit</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FFEE99</string>
+				<string>#F78C6C</string>
 			</dict>
 		</dict>
 		<dict>
@@ -150,7 +140,7 @@
 				<key>fontStyle</key>
 				<string>normal</string>
 				<key>foreground</key>
-				<string>#CBE84B</string>
+				<string>#C3E88D</string>
 			</dict>
 		</dict>
 		<dict>
@@ -161,7 +151,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FFB8FF</string>
+				<string>#FFCB6B</string>
 			</dict>
 		</dict>
 		<dict>
@@ -172,7 +162,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#50B4E6</string>
+				<string>#EC5F67</string>
 			</dict>
 		</dict>
 		<dict>
@@ -185,7 +175,7 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#F0ADF0</string>
+				<string>#C3E88D</string>
 			</dict>
 		</dict>
 		<dict>
@@ -196,18 +186,18 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#F2F2F2</string>
+				<string>#D8DEE9</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>meta.method.js</string>
 			<key>scope</key>
-			<string>meta.class-method.js entity.name.function.js, variable.function.constructor</string>
+			<string>meta.method.js</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#F2F2F2</string>
+				<string>#fff</string>
 			</dict>
 		</dict>
 		<dict>
@@ -218,7 +208,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#BB80B3</string>
+				<string>#C792EA</string>
 			</dict>
 		</dict>
 		<dict>
@@ -251,7 +241,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#BB80B3</string>
+				<string>#C792EA</string>
 			</dict>
 		</dict>
 		<dict>
@@ -335,140 +325,10 @@
 				<string>#EC5F67</string>
 			</dict>
 		</dict>
-		<dict>
-			<key>name</key>
-			<string>JSON key - Level 8</string>
-			<key>scope</key>
-			<string>source.json meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#FAC863</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>JSON key - Level 7</string>
-			<key>scope</key>
-			<string>source.json meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#C594C5</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>JSON key - Level 6</string>
-			<key>scope</key>
-			<string>source.json meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#D8DEE9</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>JSON key - Level 5</string>
-			<key>scope</key>
-			<string>source.json meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#6699CC</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>JSON key - Level 4</string>
-			<key>scope</key>
-			<string>source.json meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#AB7967</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>JSON key - Level 3</string>
-			<key>scope</key>
-			<string>source.json meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#EC5F67</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>JSON key - Level 2</string>
-			<key>scope</key>
-			<string>source.json meta meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta meta meta.structure.dictionary.json punctuation.definition.string - meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#F99157</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>JSON key - Level 1</string>
-			<key>scope</key>
-			<string>source.json meta meta.structure.dictionary.json string.quoted.double.json - meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta meta.structure.dictionary.json punctuation.definition.string - meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#FAC863</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>JSON key - Level 0</string>
-			<key>scope</key>
-			<string>source.json meta.structure.dictionary.json string.quoted.double.json - meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta.structure.dictionary.json punctuation.definition.string - meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#C594C5</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>SublimeLinter Error</string>
-			<key>scope</key>
-			<string>sublimelinter.mark.error</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#D02000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>SublimeLinter Warning</string>
-			<key>scope</key>
-			<string>sublimelinter.mark.warning</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#DDB700</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>SublimeLinter Gutter Mark</string>
-			<key>scope</key>
-			<string>sublimelinter.gutter-mark</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#FFFFFF</string>
-			</dict>
-		</dict>
 	</array>
 	<key>uuid</key>
 	<string>21a3a5f5-e82f-48a8-bc8b-9aef307f6131</string>
+	<key>semanticClass</key>
+	<string>theme.dark.material_oceanic_next</string>
 </dict>
 </plist>

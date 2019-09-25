@@ -25,6 +25,8 @@ alias zshconfig="subl ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
 alias stree='open -a SourceTree'
 alias ds='cd ${BD_DEVELOPER_DIR}/src'
+alias us='cd ${UBER_HOME}/src'
+alias gs='cd ${GOPATH}/src'
 
 # RBENV
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
@@ -33,9 +35,5 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
 
 # USER CONFIGURATION
-export PATH=/usr/local/sbin:~:$PATH::$ANDROID_HOME/tools:~/.rvm/bin:~/bin:$PATH
+export PATH=/usr/local/sbin:~:$PATH::~/.rvm/bin:~/bin:$PATH
 
-# ANDROID
-export ANDROID_HOME=/usr/local/opt/android-sdk
-export ANDROID_NDK=`brew --prefix android-ndk`
-export PATH=$ANDROID_HOME/platform-tool:$PATH

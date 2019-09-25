@@ -33,22 +33,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 [ -d "/usr/local/lib" ] && sudo chown -R $(whoami) /usr/local/lib
 [ -d "/usr/local/share" ] && sudo chown -R $(whoami) /usr/local/share
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install android vim nvm pyenv rbenv tree unison
-source $(brew --prefix nvm)/nvm.sh
-nvm install 4
-CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" pyenv install -v 2.7
-pyenv global 2.7
-rbenv install 2.3.0
-rbenv global 2.3.0
 
-###############################################################################
-# Caskroom                                                                    #
-###############################################################################
-
-brew tap caskroom/cask
-brew tap caskroom/versions
-brew cask install android-studio charles colorpicker dropbox google-chrome intellij-idea iterm2 java kaleidoscope macdown pycharm sizeup sublime-text skype sourcetree webstorm
-brew cask cleanup
 
 ###############################################################################
 # Arcanist                                                                    #
@@ -60,11 +45,8 @@ arc set-config editor "/usr/local/bin/vim"
 # Sublime                                                                     #
 ###############################################################################
 
-mkdir -p ${HOME_DIR}/System/Fonts
-cd ${HOME_DIR}/System/Fonts
-git clone https://github.com/vjpr/monaco-bold.git
-cd monaco-bold
-open MonacoB2/*.otf
+cd /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/
+open *.otf
 cd ${HOME_DIR}
 read -n1 -r -p "Install fonts and press any key to continue..." key
 
@@ -98,19 +80,12 @@ cp ${BD_DEVELOPER_DIR}/src/mac-os-bootstrap/system/zsh/zshrc ~/.zshrc
 cp ${BD_DEVELOPER_DIR}/src/mac-os-bootstrap/system/git/gitconfig ~/.gitconfig
 cp ${BD_DEVELOPER_DIR}/src/mac-os-bootstrap/system/git/gitignore ~/.gitignore
 
-cp ${BD_DEVELOPER_DIR}/system/vim/vimrc ~/.vimrc
+cp ${BD_DEVELOPER_DIR}/src/mac-os-bootstrap/system/vim/vimrc ~/.vimrc
 
 rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 cp -r ${BD_DEVELOPER_DIR}/src/mac-os-bootstrap/system/Application\ Support/Sublime\ Text\ 3/Packages/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
 cp -r ${BD_DEVELOPER_DIR}/src/mac-os-bootstrap/system/Application\ Support/Sublime\ Text\ 3/Packages/Colorsublime-Themes ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
 
-cd ${HOME}/Library/Preferences
-BD_INTELLIJ_DIR=($(find . -type d -name "IntelliJ*"))
-BD_PYCHARM_DIR=($(find . -type d -name "PyCharm*"))
-BD_WEBSTORM_DIR=($(find . -type d -name "WebStorm*"))
-ln -s ${BD_DEVELOPER_DIR}/src/mac-os-bootstrap/system/jetbrains/Ayu\ Dark.icls ${BD_INTELLIJ_DIR}/colors/Ayu\ Dark.icls
-ln -s ${BD_DEVELOPER_DIR}/src/mac-os-bootstrap/system/jetbrains/Ayu\ Dark.icls ${BD_PYCHARM_DIR}/colors/Ayu\ Dark.icls
-ln -s ${BD_DEVELOPER_DIR}/src/mac-os-bootstrap/system/jetbrains/Ayu\ Dark.icls ${BD_WEBSTORM_DIR}/colors/Ayu\ Dark.icls
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -174,27 +149,5 @@ defaults write com.apple.dock autohide -bool true
 # Disable the Launchpad gesture (pinch with thumb and three fingers)
 defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
 
-# Apps
-defaults delete com.apple.dock persistent-apps
-defaults delete com.apple.dock persistent-others
-
-defaults write com.apple.dock persistent-apps -array-add "< dict>tile-data file-data_CFURLString /Applications/Mail.app/_CFURLStringType0 ";
-defaults write com.apple.dock persistent-apps -array-add "< dict>tile-data file-data_CFURLString /Applications/Google%20Chrome.app/_CFURLStringType0 ";
-defaults write com.apple.dock persistent-apps -array-add "< dict>tile-data file-data_CFURLString /Applications/iTunes.app/_CFURLStringType0 ";
-defaults write com.apple.dock persistent-apps -array-add "< dict>tile-data file-data_CFURLString /Applications/Sublime%20Text.app/_CFURLStringType0 ";
-defaults write com.apple.dock persistent-apps -array-add "< dict>tile-data file-data_CFURLString /Applications/Messages.app/_CFURLStringType0 ";
-defaults write com.apple.dock persistent-apps -array-add "< dict>tile-data file-data_CFURLString /Applications/SourceTree.app/_CFURLStringType0 ";
-defaults write com.apple.dock persistent-apps -array-add "< dict>tile-data file-data_CFURLString /Applications/Xcode.app/_CFURLStringType0 ";
-defaults write com.apple.dock persistent-apps -array-add "< dict>tile-data file-data_CFURLString /Applications/WebStorm.app/_CFURLStringType0 ";
-defaults write com.apple.dock persistent-apps -array-add "< dict>tile-data file-data_CFURLString /Applications/IntelliJ%20IDEA.app/_CFURLStringType0 ";
-defaults write com.apple.dock persistent-apps -array-add "< dict>tile-data file-data_CFURLString /Applications/PyCharm.app/_CFURLStringType0 ";
-defaults write com.apple.dock persistent-apps -array-add "< dict>tile-data file-data_CFURLString /Applications/iTerm.app/_CFURLStringType0 ";
-defaults write com.apple.dock persistent-apps -array-add "< dict>tile-data file-data_CFURLString /Applications/App%20Store.app/_CFURLStringType0 ";
-defaults write com.apple.dock persistent-apps -array-add "< dict>tile-data file-data_CFURLString /Applications/System%20Preferences.app/_CFURLStringType0 ";
-
 # Reset Launchpad, but keep the desktop wallpaper intact
 find "${HOME}/Library/Application Support/Dock" -name "*-*.db" -maxdepth 1 -delete
-
-# Add iOS & Watch Simulator to Launchpad
-sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" "/Applications/Simulator.app"
-sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Sublime.app" "/Applications/Simulator.app"

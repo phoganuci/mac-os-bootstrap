@@ -16,7 +16,7 @@
 		"node_modules",
 		"*/.git"
 	],
-	"font_face": "MonacoB2 Bold",
+	"font_face": "SFMono-Regular",
 	"font_size": 13,
 	"ignored_packages":
 	[
