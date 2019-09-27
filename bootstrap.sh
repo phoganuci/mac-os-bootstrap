@@ -34,6 +34,18 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 [ -d "/usr/local/share" ] && sudo chown -R $(whoami) /usr/local/share
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+brew install cadence compute-cli vim yarn suql uql thriftlint moncon
+
+###############################################################################
+# Caskroom                                                                    #
+###############################################################################
+
+brew tap caskroom/cask
+brew tap caskroom/versions
+brew cask install google-chrome goland iterm2 macdown pycharm sizeup sublime-text sourcetree
+brew cask cleanup
+
+read -n1 -r -p "Open Sublime and install Package Manager.  When complete press any key to continue..." key
 
 ###############################################################################
 # Arcanist                                                                    #

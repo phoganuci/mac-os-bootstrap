@@ -8,8 +8,8 @@
 		"auto-save",
 		"ayu",
 		"Babel",
+		"ESLint-Formatter",
 		"JsFormat",
-		"MarkdownEditing",
 		"Oceanic Color Scheme",
 		"Oceanic Next Color Scheme",
 		"Oceanic Next Italic Color Scheme",
@@ -18,6 +18,6 @@
 		"RemoteEdit",
 		"rsub",
 		"SublimeLinter",
-		"SublimeLinter-contrib-eslint"
+		"SublimeLinter-eslint"
 	]
 }
